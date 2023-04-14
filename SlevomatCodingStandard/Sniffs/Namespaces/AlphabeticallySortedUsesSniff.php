@@ -83,7 +83,7 @@ class AlphabeticallySortedUsesSniff implements Sniff
 						}
 						// Also if there are any 'group use' statements then we cannot sort and fix the file.
 						$groupUsePointer = TokenHelper::findNext($phpcsFile, T_OPEN_USE_GROUP, $openTagPointer);
-						if ($groupUsePointer) {
+						if ($groupUsePointer !== null) {
 							$fixable = false;
 						}
 
