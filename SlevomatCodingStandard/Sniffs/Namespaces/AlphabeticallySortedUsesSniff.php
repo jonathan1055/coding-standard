@@ -27,6 +27,7 @@ use function strcmp;
 use function uasort;
 use const T_COMMA;
 use const T_OPEN_TAG;
+use const T_OPEN_USE_GROUP;
 use const T_SEMICOLON;
 
 class AlphabeticallySortedUsesSniff implements Sniff
